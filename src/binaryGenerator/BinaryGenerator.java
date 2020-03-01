@@ -23,6 +23,16 @@ public class BinaryGenerator {
     }
 
     public String convertNormalStringToBinaryString() {
-        return "";
+        StringBuilder s = new StringBuilder();
+        for (int i = 0; i < userInputStringInLowerCase.length(); i++) {
+            if (userInputStringInLowerCase.charAt(i) >= 'a' && userInputStringInLowerCase.charAt(i) <= 'z') {
+                String binary = Integer.toBinaryString(userInputStringInLowerCase.charAt(i));
+                int remain = 8 - binary.length();
+                String appendone = "0".repeat(remain) + binary;
+                s.append(appendone);
+            }
+        }
+        String returnString = new String(s);
+        return returnString;
     }
 }
