@@ -54,6 +54,11 @@ public class HuffmanGenerator {
         hash.put('z', "110001010");
 
         StringBuilder s = new StringBuilder();
+        for (int i = 0; i < userInputStringInLowerCase.length(); i++) {
+            if (userInputStringInLowerCase.charAt(i) >= 'a' && userInputStringInLowerCase.charAt(i) <= 'z') {
+                s.append(hash.get(userInputStringInLowerCase.charAt(i)));
+            }
+        }
         return "";
     }
 }
