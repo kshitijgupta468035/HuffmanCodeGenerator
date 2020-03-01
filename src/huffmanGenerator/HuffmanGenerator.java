@@ -59,6 +59,7 @@ public class HuffmanGenerator {
                 s.append(hash.get(userInputStringInLowerCase.charAt(i)));
             }
         }
-        return "";
+        String returnHuffmanString = new String(s);
+        return returnHuffmanString;
     }
 }
