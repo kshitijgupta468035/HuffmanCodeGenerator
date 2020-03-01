@@ -52,6 +52,8 @@ public class HuffmanGenerator {
         hash.put('x', "1100001000");
         hash.put('y', "100011");
         hash.put('z', "110001010");
+
+        StringBuilder s = new StringBuilder();
         return "";
     }
 }
